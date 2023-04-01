@@ -1,10 +1,401 @@
 /*
-Theme Name: Basic Template Bootstrap
+Theme Name: Korin Agricultura
 Theme URI: https://zapiens.com.br
-Description: Theme built for Roamming Renegades
+Description: Theme built for Korin Agricultura
 Version:1.1
 Author: João Périgo
 Author URI: https://joaoperigo.com.br
 */
 
+$primary: rgba(38, 54, 44, 1);
+$secondary: rgba(246, 138, 48, 1);
+$primary-light: rgba(111, 130, 118, 1);
+$secondary-light: rgba(210, 156, 112, 1);
+$neutral: rgba(217, 217, 217, 1);
+$light: rgba(242, 242, 242, 1);
+$white: rgba(255, 255, 255, 1);
+$dark: rgba(47, 47, 47, 1);
+$brown: rgba(130, 63, 35, 1);
+$yellow: rgba(244, 180, 0, 1);
+$yellow-light: rgba(255, 222, 128, 1);
+$dark-blue: rgba(0, 31, 88, 1);
+$turquoise: rgba(96, 178, 225, 1);
+$turquoise-light: rgba(161, 221, 255, 1);
+$dark-blue-light: rgba(64, 86, 128, 1);
+$green: rgba(106, 164, 66, 1);
+$kraft: rgba(209, 182, 153, 1);
+
 @import "node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+
+/* BASE */
+html, body {
+    // overflow-x: hidden;
+    overflow-x: clip;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $primary;
+}
+/* UTILS */
+.fill-primary {
+    fill: $primary;
+}
+.fill-secondary {
+fill: $secondary;
+}
+.fill-primary-light {
+fill: $primary-light;
+}
+.fill-secondary-light {
+fill: $secondary-light;
+}
+.fill-neutral {
+fill: $neutral;
+}
+.fill-light {
+fill: $light;
+}
+.fill-white {
+fill: $white;
+}
+.fill-dark {
+fill: $dark;
+}
+
+
+
+.bg-primary-light {
+background-color: $primary-light;
+}
+.text-primary-light {
+color: $primary-light;
+}
+.fill-primary-light {
+fill: $primary-light;
+}
+.border-primary-light {
+    border-color: $primary-light;
+}
+.bg-secondary-light {
+background-color: $secondary-light;
+}
+.text-secondary-light {
+color: $secondary-light;
+}
+.fill-secondary-light {
+fill: $secondary-light;
+}
+
+.bg-neutral {
+background-color: $neutral;
+}
+.text-neutral {
+color: $neutral;
+}
+.fill-neutral {
+fill: $neutral;
+}
+.bg-brown {
+background-color: $brown;
+}
+.text-brown {
+color: $brown;
+}
+.fill-brown {
+fill: $brown;
+}
+
+.bg-yellow {
+background-color: $yellow;
+}
+.text-yellow {
+color: $yellow;
+}
+.fill-yellow {
+fill: $yellow;
+}
+
+.bg-yellow-light {
+background-color: $yellow-light;
+}
+.text-yellow-light {
+color: $yellow-light;
+}
+.fill-yellow-light {
+fill: $yellow-light;
+}
+
+.bg-dark-blue {
+background-color: $dark-blue;
+}
+.text-dark-blue {
+color: $dark-blue;
+}
+.fill-dark-blue {
+fill: $dark-blue;
+}
+
+.bg-turquoise {
+background-color: $turquoise;
+}
+.text-turquoise {
+color: $turquoise;
+}
+.fill-turquoise {
+fill: $turquoise;
+}
+
+.bg-turquoise-light {
+background-color: $turquoise-light;
+}
+.text-turquoise-light {
+color: $turquoise-light;
+}
+.fill-turquoise-light {
+fill: $turquoise-light;
+}
+
+.bg-dark-blue-light {
+background-color: $dark-blue-light;
+}
+.text-dark-blue-light {
+color: $dark-blue-light;
+}
+.fill-dark-blue-light {
+fill: $dark-blue-light;
+}
+
+.bg-green {
+background-color: $green;
+}
+.text-green {
+color: $green;
+}
+.fill-green {
+fill: $green;
+}
+
+.bg-craft {
+background-color: $kraft;
+}
+.text-craft {
+color: $kraft;
+}
+.fill-craft {
+fill: $kraft;
+}
+
+.paragraph-size {
+    width: 451px;
+}
+.section-p-g {
+    padding-top: 157px; //desktop
+    padding-bottom: 157px; //desktop
+}
+.section-p-m {
+    padding-top: 105px; //desktop
+    padding-bottom: 229px; //desktop
+}
+.section-p-sm {
+    padding-top: 85px; //desktop
+    padding-bottom: 85px; //desktop
+}
+.kt-1 {
+    font-weight: 800;
+    @extend .fs-1, .lh-sm;
+}
+.kt-2 {
+    font-weight: 800;
+    @extend .fs-2, .lh-sm;
+}
+.kt-3 {
+    font-weight: 800;
+    @extend .fs-3, .lh-sm;
+}
+.kt-4 {
+    font-weight: 800;
+    @extend .fs-4, .lh-sm;
+}
+.kt-5 {
+    font-weight: 800;
+    @extend .fs-5, .lh-sm;
+}
+.kt-6 {
+    font-weight: 800;
+    @extend .fs-6, .lh-sm;
+}
+.paragraph-l {
+    @extend .fs-4, .lh-base;
+    font-weight: 600;
+}
+.paragraph-m {
+    @extend .fs-5, .lh-base;
+    font-weight: 600;
+}
+.paragraph {
+    @extend .fs-5, .lh-base;
+    font-weight: 500;
+}
+.paragraph-s {
+    @extend .fs-6, .lh-base;
+    font-weight: 500;
+}
+.input-label {
+    @extend .fs-6;
+    font-weight: 600;
+}
+// .placeholder-input {
+
+// }
+.wyswyg-korin {
+    h2 {
+        @extend .kt-1, .mt-5, .pt-5, .mb-5;
+    }
+    h2:first-child {
+        @extend .mt-0, .pt-0;
+    }
+    p {
+        @extend .paragraph-m;
+    }
+}
+
+/* COMPONENTS */
+#menu-top-korin {
+    transition: background-color ease .4s;
+}
+.section-triangle {
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 0;
+    }
+}
+.img-under-triangle {
+    @include media-breakpoint-down(sm) {
+        object-fit: cover;
+        height: 50%!important;
+    }
+}
+.bg-for-triangle {
+    @include media-breakpoint-down(sm) {
+        background-color: $primary;
+        padding-bottom: 157px; //desktop
+    }
+}
+.bg-for-triangle-white {
+    @include media-breakpoint-down(sm) {
+        background-color: $white;
+        padding-bottom: 157px; //desktop
+    } 
+}
+.swiper-slide {
+    //flex-shrink: 100 !important;
+    width: 312px!important;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "" !important;
+}
+.footer-korin ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-korin ul li a {
+    @extend .text-light, .text-decoration-none; 
+}
+
+.square-products-home {
+    width: 152px;
+    height: 152px;
+    @include media-breakpoint-down(sm) {
+        width: 142px;
+        height: 142px;
+    }
+}
+#header-cpt {
+    height: 390px;
+}
+
+// ctf7
+.wpcf7, .wpcf7-form, .wpcf7-form label, .wpcf7-form-control-wrap, .wpcf7-text, .wpcf7-textarea {
+    width: 100%;
+    color: $primary;
+}
+.wpcf7-text, .wpcf7-textarea {
+    @extend .py-2, .px-2, .border-primary-light;
+}
+.wpcf7-form-control {
+    border-style: solid !important;
+    border-color: $primary-light !important;
+    border-width: 1px !important;
+    @extend .p-4;
+}
+.wpcf7-form-control:focus {
+border-color: #ddd !important;
+}
+.wpcf7-list-item {
+    margin: 0;
+}
+.wpcf7-list-item input[type=checkbox] {
+    accent-color: $secondary;
+}
+::placeholder {
+    color: $neutral;
+}
+.wpcf7-acceptance {
+    border-width: 0 !important;
+    @extend .ps-0, .pe-1;
+}
+.wpcf7-phonetext, .wpcf7-countrytext {
+    padding-left: 48px!important;
+}
+.wpcf7-list-item {
+    display: block;
+}
+.agree-check .wpcf7-list-item {
+    display: inline;
+}
+.wpcf7-radio, .wpcf7-file {
+    border-width: 0!important;
+}
+
+// .wpcf7-file {
+//   color: transparent;
+// }
+// .wpcf7-file::-webkit-file-upload-button {
+//   visibility: hidden;
+// }
+// .wpcf7-file::before {
+//   content: 'Seleziona un file';
+//   color: white;
+//   display: inline-block;
+//   background: #ff9800;
+//   border: 2px solid #e68d09;
+//   border-radius: 3px;
+//   padding: 5px 8px;
+//   outline: none;
+//   white-space: nowrap;
+//   -webkit-user-select: none;
+//   cursor: pointer;
+//   font-weight: 700;
+//   text-transform: uppercase;
+//   letter-spacing: 1px;
+//   font-size: 10pt;
+// }
+// .wpcf7-file:active {
+//   outline: 0;
+// }
+// .wpcf7-file:hover::before {
+//   border-color: #ffaf37;
+// }
+// .wpcf7-file:active::before {
+//   background-color: #ff9800; 
+// }
+
+.btn-triangle {
+    background-image: url(./img/triangle.svg);
+    background-position: right 16px center;
+    background-repeat: no-repeat;
+    @extend .py-3, .px-4;
+    padding-right: 44px !important;
+}
